@@ -33,7 +33,7 @@ package
 			_adModule = player.getModule(APIModules.ADVERTISING) as AdvertisingModule;
 			_menuModule = player.getModule(APIModules.MENU) as MenuModule;
 			
-			// ExternalInterface.available is not helpful, as it still returns true if allowScriptAccess=never
+			// ExternalInterface.available is not helpful, since it still is true if allowScriptAccess=never
 			try {
 				Security.allowDomain('*');
 				

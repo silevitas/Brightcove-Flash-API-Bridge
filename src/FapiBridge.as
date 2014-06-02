@@ -34,6 +34,7 @@ package
 			_menuModule = player.getModule(APIModules.MENU) as MenuModule;
 			
 			// ExternalInterface.available is not helpful, since it still is true if allowScriptAccess=never
+			
 			try {
 				Security.allowDomain('*');
 				
